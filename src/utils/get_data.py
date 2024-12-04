@@ -22,7 +22,7 @@ def download_data(url: str, save_path: str) -> None:
 
 
 
-dataset_url = "https://public.opendatasoft.com/explore/dataset/us-cities-demographics/download/?format=csv"
+dataset_url = "https://public.opendatasoft.com/explore/dataset/global-shark-attack/download/?format=csv"
 save_location = "data/raw/dataset.csv"
 
 download_data(dataset_url, save_location)
