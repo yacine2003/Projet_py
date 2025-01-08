@@ -5,6 +5,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.express as px
 import folium
+from folium.plugins import MarkerCluster
 from flask import Flask
 
 # Charger les données
@@ -19,6 +20,9 @@ data['longitude'] = pd.to_numeric(data['longitude'], errors='coerce')
 brand_counts = data['marque'].value_counts()
 valid_brands = brand_counts[brand_counts >= 5].index
 filtered_data = data[data['marque'].isin(valid_brands)]
+
+# Créer une liste des régions à partir de la colonne 'meta_name_reg'
+regions = data['meta_name_reg'].dropna().unique()  # Utiliser la colonne meta_name_reg pour les régions
 
 # Config dash
 server = Flask(__name__)
@@ -37,6 +41,13 @@ app.layout = html.Div([
                 value=None,
                 placeholder="Sélectionnez une marque"
             ),
+            html.Label("Filtrer par Région :"),
+            dcc.Dropdown(
+                id='map-region-filter',
+                options=[{'label': region, 'value': region} for region in sorted(regions)],
+                value=None,
+                placeholder="Sélectionnez une région"
+            ),
             html.Div(id='map-container'),
         ]),
 
@@ -49,6 +60,13 @@ app.layout = html.Div([
                 value=None,
                 placeholder="Sélectionnez une marque"
             ),
+            html.Label("Filtrer par Région :"),
+            dcc.Dropdown(
+                id='hist-region-filter',
+                options=[{'label': region, 'value': region} for region in sorted(regions)],
+                value=None,
+                placeholder="Sélectionnez une région"
+            ),
             dcc.Graph(id='histogram'),
         ])
     ])
@@ -59,13 +77,16 @@ app.layout = html.Div([
 @app.callback(
     Output('histogram', 'figure'),
     [
-        Input('hist-marque-filter', 'value')
+        Input('hist-marque-filter', 'value'),
+        Input('hist-region-filter', 'value')
     ]
 )
-def update_histogram(selected_marque):
+def update_histogram(selected_marque, selected_region):
     filtered_data = data
     if selected_marque:
         filtered_data = filtered_data[filtered_data['marque'] == selected_marque]
+    if selected_region:
+        filtered_data = filtered_data[filtered_data['meta_name_reg'] == selected_region]  # Utiliser meta_name_reg
 
     # Regrouper les cinémas avec une capacité supérieure à 1500 dans la tranche 1500
     filtered_data['capacity_adjusted'] = filtered_data['capacity'].apply(
@@ -102,7 +123,9 @@ def update_histogram(selected_marque):
             title="Nombre de Cinémas",  # Titre de l'axe y
             range=[0, 400],  # Limiter l'axe y à 400
             showline=True,  # Afficher la ligne de l'axe
-            zeroline=False,  # Masquer la ligne zéro sur l'axe Y
+            zeroline=True,  # Afficher la ligne zéro
+            zerolinecolor="black",  # Couleur de la ligne zéro
+            zerolinewidth=2,  # Largeur de la ligne zéro
         ),
         bargap=0.1,  # Espacement entre les colonnes
         title_x=0.5,  # Centrer le titre
@@ -111,20 +134,27 @@ def update_histogram(selected_marque):
     
     return fig
 
+
 # Callback pour mettre à jour la carte Folium
 @app.callback(
     Output('map-container', 'children'),
     [
-        Input('map-marque-filter', 'value')
+        Input('map-marque-filter', 'value'),
+        Input('map-region-filter', 'value')
     ]
 )
-def update_map(selected_marque):
+def update_map(selected_marque, selected_region):
     filtered_data = data
     if selected_marque:
         filtered_data = filtered_data[filtered_data['marque'] == selected_marque]
+    if selected_region:
+        filtered_data = filtered_data[filtered_data['meta_name_reg'] == selected_region]  # Utiliser meta_name_reg
 
     # Créer la carte
     m = folium.Map(location=[filtered_data['latitude'].mean(), filtered_data['longitude'].mean()], zoom_start=6)
+
+    # Ajouter le cluster de marqueurs
+    marker_cluster = MarkerCluster().add_to(m)
 
     # Ajouter les marqueurs pour chaque cinéma
     for _, row in filtered_data.iterrows():
@@ -135,11 +165,12 @@ def update_map(selected_marque):
                        f"Marque: {row['marque']}<br>"
                        f"Capacité: {row['capacity']}<br>"
                        f"Nombre d'écrans: {row['nb_screens']}")
-            ).add_to(m)
+            ).add_to(marker_cluster)
 
     map_html = m._repr_html_()
 
     return html.Iframe(srcDoc=map_html, width='100%', height='500')
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
