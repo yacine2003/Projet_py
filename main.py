@@ -7,173 +7,134 @@ import plotly.express as px
 import folium
 from flask import Flask
 
-from src.utils.dict_coordonnees import dict_coord
-
+# Charger les données
 data = pd.read_csv('data/cleaned/cleaneddata.csv')
 
-# Assurer que les clés sont bien converties en type attendu
-data['original_order'] = data['original_order'].astype(str)
+# Séparation des coordonnées de la colonne 'OSM Point' (latitude, longitude)
+data[['latitude', 'longitude']] = data['meta_geo_point'].str.split(',', expand=True)
+data['latitude'] = pd.to_numeric(data['latitude'], errors='coerce')
+data['longitude'] = pd.to_numeric(data['longitude'], errors='coerce')
 
-# Préparer les coordonnées pour fusion avec les données
-coordinates_df = pd.DataFrame.from_dict(dict_coord, orient='index', columns=['latitude', 'longitude'])
-coordinates_df.index.name = 'original_order'
-coordinates_df.reset_index(inplace=True)
+# Filtrer les marques qui apparaissent au moins 5 fois
+brand_counts = data['marque'].value_counts()
+valid_brands = brand_counts[brand_counts >= 5].index
+filtered_data = data[data['marque'].isin(valid_brands)]
 
-# Fusion coordonnées avec les données de base
-data = pd.merge(data, coordinates_df, on='original_order', how='left')
-
-#Config dash
+# Config dash
 server = Flask(__name__)
 app = dash.Dash(__name__, server=server)
 
 app.layout = html.Div([
-    html.H1("Dashboard des Attaques de Requins"),
+    html.H1("Dashboard des Cinémas"),
 
     dcc.Tabs([
+        # Carte
         dcc.Tab(label='Carte', children=[
-            html.Label("Filtrer par année :"),
+            html.Label("Filtrer par Marque :"),
             dcc.Dropdown(
-                id='map-year-filter',
-                options=[{'label': year, 'value': year} for year in sorted(data['year'].dropna().unique())],
+                id='map-marque-filter',
+                options=[{'label': marque, 'value': marque} for marque in sorted(valid_brands)],
                 value=None,
-                placeholder="Sélectionnez une année"
+                placeholder="Sélectionnez une marque"
             ),
-
-            html.Label("Filtrer par pays :"),
-            dcc.Dropdown(
-                id='map-country-filter',
-                options=[{'label': country, 'value': country} for country in sorted(data['country'].dropna().unique())],
-                value=None,
-                placeholder="Sélectionnez un pays"
-            ),
-
             html.Div(id='map-container'),
         ]),
-        
+
+        # Histogramme
         dcc.Tab(label='Histogramme', children=[
-            html.Label("Filtrer par année :"),
+            html.Label("Filtrer par Marque :"),
             dcc.Dropdown(
-                id='hist-year-filter',
-                options=[{'label': year, 'value': year} for year in sorted(data['year'].dropna().unique())],
+                id='hist-marque-filter',
+                options=[{'label': marque, 'value': marque} for marque in sorted(valid_brands)],
                 value=None,
-                placeholder="Sélectionnez une année"
+                placeholder="Sélectionnez une marque"
             ),
-
-            html.Label("Filtrer par pays :"),
-            dcc.Dropdown(
-                id='hist-country-filter',
-                options=[{'label': country, 'value': country} for country in sorted(data['country'].dropna().unique())],
-                value=None,
-                placeholder="Sélectionnez un pays"
-            ),
-
             dcc.Graph(id='histogram'),
         ])
     ])
 ])
 
-# Callback pour mettre à jour les options des Dropdowns dynamiquement pour la carte
-@app.callback(
-    [
-        Output('map-year-filter', 'options'),
-        Output('map-country-filter', 'options')
-    ],
-    [
-        Input('map-year-filter', 'value'),
-        Input('map-country-filter', 'value')
-    ]
-)
-def update_map_dropdown_options(selected_year, selected_country):
-    filtered_data = data
-    
-    if selected_country:
-        filtered_data = filtered_data[filtered_data['country'] == selected_country]
-    if selected_year:
-        filtered_data = filtered_data[filtered_data['year'] == selected_year]
-
-    year_options = [{'label': year, 'value': year} for year in sorted(filtered_data['year'].dropna().unique())]
-    country_options = [{'label': country, 'value': country} for country in sorted(filtered_data['country'].dropna().unique())]
-
-    return year_options, country_options
-
-# Callback pour mettre à jour les options des Dropdowns dynamiquement pour l'histogramme
-@app.callback(
-    [
-        Output('hist-year-filter', 'options'),
-        Output('hist-country-filter', 'options')
-    ],
-    [
-        Input('hist-year-filter', 'value'),
-        Input('hist-country-filter', 'value')
-    ]
-)
-def update_hist_dropdown_options(selected_year, selected_country):
-    filtered_data = data
-    
-    if selected_country:
-        filtered_data = filtered_data[filtered_data['country'] == selected_country]
-    if selected_year:
-        filtered_data = filtered_data[filtered_data['year'] == selected_year]
-
-    year_options = [{'label': year, 'value': year} for year in sorted(filtered_data['year'].dropna().unique())]
-    country_options = [{'label': country, 'value': country} for country in sorted(filtered_data['country'].dropna().unique())]
-
-    return year_options, country_options
 
 # Callback pour mettre à jour l'histogramme
 @app.callback(
     Output('histogram', 'figure'),
     [
-        Input('hist-year-filter', 'value'),
-        Input('hist-country-filter', 'value')
+        Input('hist-marque-filter', 'value')
     ]
 )
-def update_histogram(selected_year, selected_country):
+def update_histogram(selected_marque):
     filtered_data = data
-    if selected_year:
-        filtered_data = filtered_data[filtered_data['year'] == selected_year]
-    if selected_country:
-        filtered_data = filtered_data[filtered_data['country'] == selected_country]
+    if selected_marque:
+        filtered_data = filtered_data[filtered_data['marque'] == selected_marque]
 
-    fig = px.histogram(filtered_data, x='year', title='Nombre d\'attaques par année')
+    # Regrouper les cinémas avec une capacité supérieure à 1500 dans la tranche 1500
+    filtered_data['capacity_adjusted'] = filtered_data['capacity'].apply(
+        lambda x: 1500 if x > 1500 else x
+    )
+
+    # Histogramme de la capacité des cinémas avec des tranches de 100
+    fig = px.histogram(
+        filtered_data, 
+        x='capacity_adjusted', 
+        nbins=int(filtered_data['capacity_adjusted'].max() // 100),
+        title='Distribution de la Capacité des Cinémas'
+    )
+
+    # Ajuster la largeur des barres et les délimiter plus clairement
+    fig.update_traces(
+        marker=dict(line=dict(width=1, color='black')),  # Délimiter les colonnes avec une bordure noire
+        opacity=0.7,  # Rendre les colonnes légèrement transparentes pour plus de clarté
+    )
+
+    # Ajuster les axes pour zoomer et mieux délimiter
+    fig.update_layout(
+        xaxis=dict(
+            title="Capacité",  # Titre de l'axe x
+            range=[0, 1600],  # Limite de l'axe x pour un zoom (1500 + une petite marge)
+            tickmode='array',  # Spécifier un mode de ticks pour plus de contrôle
+            tickvals=list(range(0, 1600, 100)),  # Marquer les valeurs tous les 100 jusqu'à 1500
+            showline=True,  # Afficher la ligne de l'axe
+            zeroline=True,  # Afficher la ligne zéro
+            zerolinecolor="black",  # Couleur de la ligne zéro
+            zerolinewidth=2,  # Largeur de la ligne zéro
+        ),
+        yaxis=dict(
+            title="Nombre de Cinémas",  # Titre de l'axe y
+            range=[0, 400],  # Limiter l'axe y à 400
+            showline=True,  # Afficher la ligne de l'axe
+            zeroline=False,  # Masquer la ligne zéro sur l'axe Y
+        ),
+        bargap=0.1,  # Espacement entre les colonnes
+        title_x=0.5,  # Centrer le titre
+        title_y=0.95,  # Ajuster la position du titre
+    )
+    
     return fig
 
 # Callback pour mettre à jour la carte Folium
 @app.callback(
     Output('map-container', 'children'),
     [
-        Input('map-year-filter', 'value'),
-        Input('map-country-filter', 'value')
+        Input('map-marque-filter', 'value')
     ]
 )
-def update_map(selected_year, selected_country):
+def update_map(selected_marque):
     filtered_data = data
-    if selected_year:
-        filtered_data = filtered_data[filtered_data['year'] == selected_year]
-    if selected_country:
-        filtered_data = filtered_data[filtered_data['country'] == selected_country]
+    if selected_marque:
+        filtered_data = filtered_data[filtered_data['marque'] == selected_marque]
 
-    # Zoom sur le pays sélectionné
-    if selected_country and not filtered_data.empty:
-        country_data = filtered_data[filtered_data['country'] == selected_country]
-        avg_lat = country_data['latitude'].mean()
-        avg_lon = country_data['longitude'].mean()
-        m = folium.Map(location=[avg_lat, avg_lon], zoom_start=5)
-    else:
-        m = folium.Map(location=[0, 0], zoom_start=2)
+    # Créer la carte
+    m = folium.Map(location=[filtered_data['latitude'].mean(), filtered_data['longitude'].mean()], zoom_start=6)
 
-    # Ajout des marqueurs sur la carte
+    # Ajouter les marqueurs pour chaque cinéma
     for _, row in filtered_data.iterrows():
         if not pd.isna(row['latitude']) and not pd.isna(row['longitude']):
             folium.Marker(
                 location=[row['latitude'], row['longitude']],
-                popup=(
-                    f"Lieu: {row['location']}<br>"
-                    f"Année: {row['year']}<br>"
-                    f"Espèce: {row['species']}<br>"
-                    f"Blessure: {row['injury']}<br>"
-                    f"Âge: {row.get('age', 'Inconnu')}"
-                )
+                popup=(f"Nom: {row['name']}<br>"
+                       f"Marque: {row['marque']}<br>"
+                       f"Capacité: {row['capacity']}<br>"
+                       f"Nombre d'écrans: {row['nb_screens']}")
             ).add_to(m)
 
     map_html = m._repr_html_()
@@ -182,7 +143,3 @@ def update_map(selected_year, selected_country):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-
-
