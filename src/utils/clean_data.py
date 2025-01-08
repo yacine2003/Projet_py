@@ -5,12 +5,14 @@ def cleaned_data(input_file: str, output_file: str) -> pd.DataFrame:
     # Charger les données brutes
     df = pd.read_csv(input_file, sep=';')
 
-    # Supprimer les lignes avec des valeurs manquantes
-    df_cleaned = df.dropna()
-
     # Supprimer les colonnes spécifiques
-    columns_to_drop = ['href', 'href_formula', 'pdf', 'case_number']
-    df_cleaned = df_cleaned.drop(columns=columns_to_drop, errors='ignore')  # errors='ignore' évite les erreurs si certaines colonnes n'existent pas
+    columns_to_drop = ['meta_users_number', 'meta_osm_url', 'meta_first_update', 'meta_last_update',
+                       'meta_versions_number', 'siret', 'wikidata', 'facebook']
+    df_cleaned = df.drop(columns=columns_to_drop, errors='ignore')  # Ignore les erreurs si certaines colonnes n'existent pas
+
+    # Supprimer les lignes où "capacity" est vide (NaN ou valeurs nulles)
+    if 'capacity' in df_cleaned.columns:
+        df_cleaned = df_cleaned.dropna(subset=['capacity'])
 
     # Vérifier si le répertoire de sortie existe, sinon le créer
     output_dir = os.path.dirname(output_file)
