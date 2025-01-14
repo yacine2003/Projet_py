@@ -24,7 +24,7 @@ regions = data['meta_name_reg'].dropna().unique()  # Utiliser la colonne meta_na
 
 # Config dash
 server = Flask(__name__)
-app = dash.Dash(__name__, server=server)
+app = dash.Dash(__name__, server=server, suppress_callback_exceptions=True)
 
 # Définir la mise en page
 app.layout = html.Div([
@@ -223,89 +223,8 @@ def display_content(nav_accueil_clicks, nav_carte_clicks, nav_histogramme_clicks
             ),
             dcc.Graph(id='histogram'),
         ])
-""" def display_content(nav_accueil_clicks, nav_carte_clicks, nav_histogramme_clicks):
-    # Obtenir le contexte du déclencheur
-    ctx = dash.callback_context
 
-    # Si aucun lien n'a été cliqué, afficher la page d'accueil par défaut
-    if not ctx.triggered:
-        return html.Div([
-            html.H1("Bienvenue dans le Dashboard des Cinémas", style={'textAlign': 'center'}),
-            html.P(
-                "Utilisez le menu à gauche pour naviguer entre les sections.",
-                style={'textAlign': 'center', 'fontSize': '18px'}
-            ),
-            html.Div(
-                "Ce tableau de bord vous permet de visualiser :",
-                style={'marginTop': '20px', 'fontSize': '16px'}
-            ),
-            html.Ul([
-                html.Li("Une carte interactive des cinémas et de leurs caractéristiques."),
-                html.Li("Un histogramme pour analyser la distribution des capacités."),
-            ], style={'fontSize': '16px'}),
-        ])
 
-    # Identifier quel lien a été cliqué
-    triggered_id = ctx.triggered[0]['prop_id'].split('.')[0]
-
-    if triggered_id == 'nav-accueil':
-        # Afficher la page d'accueil
-        return html.Div([
-            html.H1("Bienvenue dans le Dashboard des Cinémas", style={'textAlign': 'center'}),
-            html.P(
-                "Utilisez le menu à gauche pour naviguer entre les sections.",
-                style={'textAlign': 'center', 'fontSize': '18px'}
-            ),
-            html.Div(
-                "Ce tableau de bord vous permet de visualiser :",
-                style={'marginTop': '20px', 'fontSize': '16px'}
-            ),
-            html.Ul([
-                html.Li("Une carte interactive des cinémas et de leurs caractéristiques."),
-                html.Li("Un histogramme pour analyser la distribution des capacités."),
-            ], style={'fontSize': '16px'}),
-        ])
-
-    elif triggered_id == 'nav-carte':
-        # Afficher la section Carte
-        return html.Div([
-            html.Label("Filtrer par Marque :"),
-            dcc.Dropdown(
-                id='map-marque-filter',
-                options=[{'label': marque, 'value': marque} for marque in sorted(valid_brands)],
-                value=None,
-                placeholder="Sélectionnez une marque"
-            ),
-            html.Label("Filtrer par Région :"),
-            dcc.Dropdown(
-                id='map-region-filter',
-                options=[{'label': region, 'value': region} for region in sorted(regions)],
-                value=None,
-                placeholder="Sélectionnez une région"
-            ),
-            html.Div(id='map-container'),
-        ])
-
-    elif triggered_id == 'nav-histogramme':
-        # Afficher la section Histogramme
-        return html.Div([
-            html.Label("Filtrer par Marque :"),
-            dcc.Dropdown(
-                id='hist-marque-filter',
-                options=[{'label': marque, 'value': marque} for marque in sorted(valid_brands)],
-                value=None,
-                placeholder="Sélectionnez une marque"
-            ),
-            html.Label("Filtrer par Région :"),
-            dcc.Dropdown(
-                id='hist-region-filter',
-                options=[{'label': region, 'value': region} for region in sorted(regions)],
-                value=None,
-                placeholder="Sélectionnez une région"
-            ),
-            dcc.Graph(id='histogram'),
-        ])
- """
 
 
 # Callback pour l'histogramme
@@ -315,7 +234,7 @@ def display_content(nav_accueil_clicks, nav_carte_clicks, nav_histogramme_clicks
         Input('hist-marque-filter', 'value'),
         Input('hist-region-filter', 'value')
     ]
-)
+) 
 def update_histogram(selected_marque, selected_region):
     filtered_data = data
     if selected_marque:
@@ -341,7 +260,7 @@ def update_histogram(selected_marque, selected_region):
         Input('map-marque-filter', 'value'),
         Input('map-region-filter', 'value')
     ]
-)
+) 
 def update_map(selected_marque, selected_region):
     filtered_data = data
     if selected_marque:
