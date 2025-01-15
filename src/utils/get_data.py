@@ -8,22 +8,17 @@ def download_data(url: str, save_path: str) -> None:
     Args:
         url (str): L'URL du fichier à télécharger.
         save_path (str): Chemin où sauvegarder le fichier téléchargé.
+
     """
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()  # Vérifie si la requête a réussi 
 
         with open(save_path, "wb") as file:
             file.write(response.content)
 
-        print(f"Fichier téléchargé avec succès : {save_path}")
-
     except requests.exceptions.RequestException as e:
         print(f"Erreur lors du téléchargement : {e}")
+        raise e
 
-
-
-dataset_url = "https://public.opendatasoft.com/explore/dataset/osm-france-cinema/download/?format=csv"
-save_location = "data/raw/dataset.csv"
-
-download_data(dataset_url, save_location)
 

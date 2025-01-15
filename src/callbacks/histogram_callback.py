@@ -1,7 +1,17 @@
-from dash import Input, Output
+from dash import Input, Output,dash
 import plotly.express as px
+import plotly
+import pandas as pd
 
-def register_histogram_callbacks(app, data):
+def register_histogram_callbacks(app: dash.Dash, data: pd.DataFrame):
+    """
+    Enregistre un callback pour mettre à jour dynamiquement l'histogramme en fonction
+    des filtres sélectionnés.
+
+    Args:
+        app (dash.Dash): L'application Dash.
+        data (pd.DataFrame): Les données contenant les informations sur les cinémas.
+    """
     @app.callback(
         Output('histogram', 'figure'),
         [
@@ -9,7 +19,19 @@ def register_histogram_callbacks(app, data):
             Input('hist-region-filter', 'value')
         ]
     )
-    def update_histogram(selected_marque, selected_region):
+
+    def update_histogram(selected_marque: str, selected_region: str) -> plotly.graph_objs._figure.Figure:
+        """
+        Met à jour l'histogramme en fonction des valeurs sélectionnées dans les filtres.
+
+        Args:
+            selected_marque (str): Marque sélectionnée dans le filtre.
+            selected_region (str): Région sélectionnée dans le filtre.
+
+        Returns:
+            plotly.graph_objs._figure.Figure: Un graphique Plotly représentant l'histogramme.
+        """
+        # Filtre les données en fonction des filtres sélectionnés
         filtered_data = data
         if selected_marque:
             filtered_data = filtered_data[filtered_data['marque'] == selected_marque]
