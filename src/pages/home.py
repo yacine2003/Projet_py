@@ -14,6 +14,7 @@ def create_home_page():
             html.Ul([
                 html.Li("Une carte interactive des cinémas et de leurs caractéristiques."),
                 html.Li("Un histogramme pour analyser la distribution des capacités."),
+                html.Li("Une carte de chaleur pour visualier la répartition des cinémas en france."),
             ], style={'fontSize': '16px'}),
         ])
 
