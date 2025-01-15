@@ -41,7 +41,8 @@ def create_menu():
                         html.Li(html.A("Accueil", href="#", id='nav-accueil', style={'color': 'white', 'textDecoration': 'none','padding': '10px',})),
                         html.Li(html.A("Carte", href="#", id='nav-carte', style={'color': 'white', 'textDecoration': 'none','padding': '10px'})),
                         html.Li(html.A("Histogramme", href="#", id='nav-histogramme', style={'color': 'white', 'textDecoration': 'none','padding': '10px'})),
-                        html.Li(html.A("Carte de chaleur", href="#", id='nav-carteheat', style={'color': 'white', 'textDecoration': 'none','padding': '10px'}))
+                        html.Li(html.A("Carte de chaleur", href="#", id='nav-carteheat', style={'color': 'white', 'textDecoration': 'none','padding': '10px'})),
+                        html.Li(html.A("Diagramme circulaire", href="#", id='nav-circle', style={'color': 'white', 'textDecoration': 'none','padding': '10px'})),
                     ],
                     style={
                         'listStyleType': 'none',  
