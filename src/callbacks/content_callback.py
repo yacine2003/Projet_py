@@ -3,6 +3,7 @@ import dash
 from src.pages.home import create_home_page
 from src.pages.map import create_map
 from src.pages.histogram import create_histogram
+from src.pages.heatmap import create_heatmap
 
 def register_content_callback(app, valid_brands, regions):
     @app.callback(
@@ -10,11 +11,13 @@ def register_content_callback(app, valid_brands, regions):
         [
             Input('nav-accueil', 'n_clicks'),
             Input('nav-carte', 'n_clicks'),
-            Input('nav-histogramme', 'n_clicks')
+            Input('nav-histogramme', 'n_clicks'),
+            Input('nav-carteheat', 'n_clicks')
+            
         ]
     )
 
-    def display_content(nav_accueil_clicks, nav_carte_clicks, nav_histogramme_clicks):
+    def display_content(nav_accueil_clicks, nav_carte_clicks, nav_histogramme_clicks,nav_carteheat_clicks ):
         # Obtenir le contexte du déclencheur
         ctx = dash.callback_context
 
@@ -33,5 +36,8 @@ def register_content_callback(app, valid_brands, regions):
 
         elif triggered_id == 'nav-histogramme':
             return create_histogram(valid_brands,regions)
+        
+        elif triggered_id == 'nav-carteheat':
+            return create_heatmap(valid_brands,regions)
 
 
