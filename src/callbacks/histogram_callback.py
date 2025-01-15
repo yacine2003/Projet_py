@@ -19,6 +19,7 @@ def register_histogram_callbacks(app: dash.Dash, data: pd.DataFrame):
             Input('hist-region-filter', 'value')
         ]
     )
+
     def update_histogram(selected_marque: str, selected_region: str) -> plotly.graph_objs._figure.Figure:
         """
         Met à jour l'histogramme en fonction des valeurs sélectionnées dans les filtres.
@@ -37,22 +38,35 @@ def register_histogram_callbacks(app: dash.Dash, data: pd.DataFrame):
         if selected_region:
             filtered_data = filtered_data[filtered_data['meta_name_reg'] == selected_region]
 
-        # Vérifie si la colonne 'capacity' existe et ajuste les valeurs
-        if 'capacity' in filtered_data.columns:
-            filtered_data['capacity_adjusted'] = filtered_data['capacity'].apply(lambda x: min(x, 1500))
-        else:
-            raise ValueError("La colonne 'capacity' est manquante dans les données.")
+        # Ajuster les capacités pour limiter à 1500
+        filtered_data['capacite'] = filtered_data['capacity'].apply(lambda x: 1500 if x > 1500 else x)
 
-        # Créer l'histogramme avec Plotly
+        # Créer l'histogramme
         fig = px.histogram(
             filtered_data,
-            x='capacity_adjusted',
-            nbins=20,
-            title='Distribution de la Capacité des Cinémas'
+            x='capacite',
+            nbins=int(filtered_data['capacite'].max() // 100),
+            title='Distribution de la Capacité des Cinémas',
+            labels={'count': 'Nombre de cinémas', 'capacite': 'Capacité'}
         )
-        fig.update_traces(
-            marker=dict(line=dict(width=1, color='black')),
-            opacity=0.7
+
+        # Ajuster les barres pour inclure la colonne 1500+
+        fig.update_traces(marker=dict(line=dict(width=1, color='black')), opacity=0.7)
+
+        # Personnalisation des ticks sur l'axe x
+        tick_vals = list(range(0, 1599, 100)) + [1599]
+        tick_texts = [f"{val}" for val in range(0, 1599, 100)] + ["1599+"]
+
+        # Mise en page personnalisée
+        fig.update_layout(
+            xaxis=dict(
+                title="Capacité",
+                tickmode="array",
+                tickvals=tick_vals,
+                ticktext=tick_texts,
+            ),
+            yaxis_title="Nombre de cinémas",
+            title_x=0.5,  # Centrer le titre
         )
 
         return fig

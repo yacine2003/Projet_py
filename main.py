@@ -7,6 +7,8 @@ from src.callbacks.menu_callback import register_menu_callbacks
 from src.callbacks.content_callback import register_content_callback
 from src.callbacks.histogram_callback import register_histogram_callbacks
 from src.callbacks.map_callback import register_map_callbacks
+from src.callbacks.heatmap_callback import register_heatmap_callbacks
+
 from src.utils.get_data import download_data
 from src.utils.clean_data import cleaned_data
 from config import *
@@ -41,9 +43,13 @@ app.layout = html.Div([
 
 # Enregistrement des callbacks
 register_menu_callbacks(app)
-register_content_callback(app, valid_brands, regions)
-register_histogram_callbacks(app, data)
-register_map_callbacks(app, data)
+register_content_callback(app,valid_brands,regions)
+register_histogram_callbacks(app,data)
+register_map_callbacks(app,data)
+register_heatmap_callbacks(app, data)
+
+
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)

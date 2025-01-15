@@ -3,6 +3,7 @@ import dash,numpy as np, pandas as pd
 from src.pages.home import create_home_page
 from src.pages.map import create_map
 from src.pages.histogram import create_histogram
+from src.pages.heatmap import create_heatmap
 
 def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: np.ndarray):
     """
@@ -19,10 +20,13 @@ def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: n
         [
             Input('nav-accueil', 'n_clicks'),
             Input('nav-carte', 'n_clicks'),
-            Input('nav-histogramme', 'n_clicks')
+            Input('nav-histogramme', 'n_clicks'),
+            Input('nav-carteheat', 'n_clicks')
+            
         ]
     )
-    def display_content(nav_accueil_clicks: int, nav_carte_clicks: int, nav_histogramme_clicks: int) -> dash.html.Div:
+
+    def display_content(nav_accueil_clicks: int, nav_carte_clicks: int, nav_histogramme_clicks: int, nav_carteheat_clicks: int) -> dash.html.Div:
         """
         Gère les clics sur les liens du menu et met à jour le contenu affiché dans 'main-content'.
 
@@ -38,6 +42,7 @@ def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: n
         ctx = callback_context
 
         # Si aucun lien n'a été cliqué, on affiche la page d'accueil par défaut
+
         if not ctx.triggered:
             return create_home_page()
 
@@ -50,4 +55,10 @@ def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: n
         elif triggered_id == 'nav-carte':
             return create_map(valid_brands, regions)
         elif triggered_id == 'nav-histogramme':
-            return create_histogram(valid_brands, regions)
+            return create_histogram(valid_brands,regions)
+        
+        elif triggered_id == 'nav-carteheat':
+            return create_heatmap(valid_brands,regions)
+
+
+
