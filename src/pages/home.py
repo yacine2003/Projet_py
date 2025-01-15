@@ -1,8 +1,4 @@
 
-from dash import html, dash 
-
-
-
 def create_home_page() -> dash.html.Div:
     """
     Génère la page d'accueil du tableau de bord.
@@ -13,7 +9,7 @@ def create_home_page() -> dash.html.Div:
     return html.Div([
         # Titre principal
         html.H1(
-            "Bienvenue dans le Dashboard des Cinémas", 
+            "Bienvenue dans le Dashboard des Cinémas en France", 
             style={'textAlign': 'center'}
         ),
         

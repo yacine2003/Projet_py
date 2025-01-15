@@ -8,6 +8,7 @@ from src.callbacks.content_callback import register_content_callback
 from src.callbacks.histogram_callback import register_histogram_callbacks
 from src.callbacks.map_callback import register_map_callbacks
 from src.callbacks.heatmap_callback import register_heatmap_callbacks
+from src.callbacks.circle_callback import register_pie_chart_callbacks
 
 from src.utils.get_data import download_data
 from src.utils.clean_data import cleaned_data
@@ -47,6 +48,7 @@ register_content_callback(app,valid_brands,regions)
 register_histogram_callbacks(app,data)
 register_map_callbacks(app,data)
 register_heatmap_callbacks(app, data)
+register_pie_chart_callbacks(app, data)
 
 
 

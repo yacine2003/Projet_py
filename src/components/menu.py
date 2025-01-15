@@ -103,6 +103,18 @@ def create_menu() -> dash.html.Div:
                                   'padding': '10px'
                                 }
                               )
+                            ),
+                            html.Li(
+                              html.A(
+                                "Diagramme circulaire",
+                                href="#",
+                                id='nav-circle',
+                                style={
+                                  'color': 'white',
+                                  'textDecoration': 'none',
+                                  'padding': '10px'
+                                }
+                              )
                             )
                         ],
                         style={
@@ -114,13 +126,6 @@ def create_menu() -> dash.html.Div:
                             'gap': '15px'  # Espacement entre les liens
                         }
                     )
-
-                   
-                    html.Ul([
-                        html.Li(html.A("Accueil", href="#", id='nav-accueil', style={'color': 'white', 'textDecoration': 'none','padding': '10px',})),
-                        html.Li(html.A("Carte", href="#", id='nav-carte', style={'color': 'white', 'textDecoration': 'none','padding': '10px'})),
-                        html.Li(html.A("Histogramme", href="#", id='nav-histogramme', style={'color': 'white', 'textDecoration': 'none','padding': '10px'})),
-                        
                     ],
                     style={
                         'listStyleType': 'none',  

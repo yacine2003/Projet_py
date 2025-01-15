@@ -4,6 +4,7 @@ from src.pages.home import create_home_page
 from src.pages.map import create_map
 from src.pages.histogram import create_histogram
 from src.pages.heatmap import create_heatmap
+from src.pages.circle import create_pie_chart
 
 def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: np.ndarray):
     """
@@ -21,10 +22,13 @@ def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: n
             Input('nav-accueil', 'n_clicks'),
             Input('nav-carte', 'n_clicks'),
             Input('nav-histogramme', 'n_clicks'),
-            Input('nav-carteheat', 'n_clicks')
+            Input('nav-carteheat', 'n_clicks'),
+            Input('nav-circle', 'n_clicks'),
             
         ]
     )
+
+
 
     def display_content(nav_accueil_clicks: int, nav_carte_clicks: int, nav_histogramme_clicks: int, nav_carteheat_clicks: int) -> dash.html.Div:
         """
@@ -59,6 +63,9 @@ def register_content_callback(app: dash.Dash, valid_brands: pd.Index, regions: n
         
         elif triggered_id == 'nav-carteheat':
             return create_heatmap(valid_brands,regions)
+        
+        elif triggered_id == 'nav-circle':
+            return create_pie_chart(valid_brands, regions)
 
 
 
