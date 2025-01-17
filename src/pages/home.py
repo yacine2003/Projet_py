@@ -1,6 +1,8 @@
 import dash
 from dash import html
 
+
+
 def create_home_page() -> dash.html.Div:
     """
     Génère la page d'accueil du tableau de bord
@@ -34,6 +36,22 @@ def create_home_page() -> dash.html.Div:
             html.Li("Une heatmap pour visualiser la densité des cinémas."),
             html.Li("Un diagramme circulaire de la répartition des cinémas par régions."),
         ], style={'fontSize': '20px'}),
+        
+        #gestion des images
+        html.Div([
+            html.Img(
+                src="/assets/image_cgr.png",  
+                style={'width': '300px', 'margin': '10px'}
+            ),
+            html.Img(
+                src="/assets/image_ugc.png",  
+                style={'width': '300px', 'margin': '10px'}
+            ),
+            html.Img(
+                src="/assets/image_pathe.png",  
+                style={'width': '300px', 'margin': '10px'}
+            ),
+        ], style={'textAlign': 'center', 'marginTop': '30px'}),
     ])
 
 
