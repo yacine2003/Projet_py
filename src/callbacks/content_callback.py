@@ -1,5 +1,7 @@
 from dash import Input, Output, callback_context
-import dash,numpy as np, pandas as pd
+import dash
+import numpy as np
+import pandas as pd
 from src.pages.home import create_home_page
 from src.pages.map import create_map
 from src.pages.histogram import create_histogram

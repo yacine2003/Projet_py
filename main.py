@@ -12,7 +12,9 @@ from src.callbacks.circle_callback import register_pie_chart_callbacks
 
 from src.utils.get_data import download_data
 from src.utils.clean_data import cleaned_data
-from config import *
+from config import DATA_URL
+from config import RAW_DATA_PATH
+from config import CLEANED_DATA_PATH
 
 #télécharge les données et les nettoyer
 

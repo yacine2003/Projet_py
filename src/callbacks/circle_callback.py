@@ -1,4 +1,4 @@
-from dash import Input, Output, dcc, html
+from dash import Input, Output, dcc
 import plotly.express as px
 
 def register_pie_chart_callbacks(app, data):
