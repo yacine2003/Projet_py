@@ -3,11 +3,11 @@ from dash import dcc, html
 def create_heatmap(valid_brands,regions):
     """
     Crée l'interface utilisateur pour afficher une carte de chaleur des cinémas, avec des filtres interactifs 
-    pour la sélection de la marque et de la région.
+    pour la sélection de la marque et de la région
 
     Args:
-        valid_brands (list): Liste des marques de cinémas disponibles pour filtrer les données sur la carte de chaleur.
-        regions (list): Liste des régions disponibles pour filtrer les données sur la carte de chaleur.
+        valid_brands (list): Liste des marques de cinémas disponibles pour filtrer les données sur la carte de chaleur
+        regions (list): Liste des régions disponibles pour filtrer les données sur la carte de chaleur
 
     Returns:
         html.Div: Un composant HTML contenant l'interface utilisateur pour la carte de chaleur, y compris 

@@ -340,20 +340,6 @@ Opéraims,,,11.0,1606.0,yes,no,,,,https://www.operaims.fr/,+33 3 26 78 20 00,333
 Pathé,Pathé Gaumont,,12.0,2371.0,,yes,,,,https://www.cinemaspathegaumont.com/cinemas/cinema-gaumont-cite-europe,,120181,Coquelles,62239,Pas-de-Calais,62,Hauts-de-France,32,"50.9361346308696,1.80952016260275",106761383
 Le Fief,,,1.0,290.0,,no,,,,,,73371,Bretignolles-sur-Mer,85035,Vendée,85,Pays de la Loire,52,"46.6286735597477,-1.85433309461352",108669115
 Kinépolis Saint-Julien-lès-Metz,Kinepolis,"Mo,Tu 13:15-00:00; We-Sa 13:15-01:00; Su 10:15-01:00",14.0,4058.0,,yes,,no,,https://kinepolis.fr/cinemas/kinepolis-st-julien-les-metz,+33 3 87 75 84 50,395671,Saint-Julien-lès-Metz,57616,Moselle,57,Grand Est,44,"49.1328772651209,6.19901815495412",132438776
-CGR Manosque,CGR,"Mo,Tu,Th 13:00-21:00; We,Su 10:30-21:00; Sa 10:30-22:30; Fr 13:00-22:30; PH 10:30-22:30",8.0,1214.0,,yes,,,,https://www.cgrcinemas.fr/manosque-la-villette/,,723960,Manosque,04112,Alpes-de-Haute-Provence,04,Provence-Alpes-Côte d'Azur,93,"43.8360176763732,5.78341423931935",625995385
-Véo Tulle,,,5.0,708.0,,yes,,,,,,436927,Tulle,19272,Corrèze,19,Nouvelle-Aquitaine,75,"45.272496703459,1.77643800414907",667327797
-Ciné Vauban,,,8.0,1458.0,,,,,,https://cinevauban.fr/,+33 2 23 15 15 65,399689,Saint-Malo,35288,Ille-et-Vilaine,35,Bretagne,53,"48.6573432914166,-1.97085086240146",783098024
-Le Long-Court,,,2.0,324.0,,no,,,,https://www.lelongcourt.fr/,,126311,Coutances,50147,Manche,50,Normandie,28,"49.0498246874761,-1.44661281568087",254376356
-Omnia République,Nord-Ouest Exploitation Cinémas,,8.0,1345.0,yes,no,,,,https://www.omnia-cinemas.com,+33 2 35 07 82 70,344532,Rouen,76540,Seine-Maritime,76,Normandie,28,"49.4384720263726,1.09741369726707",-12991526
-Pathé Archamps,Pathé Gaumont,Mo-Su 10:00-23:59,12.0,2554.0,yes,yes,,,,https://www.cinemaspathegaumont.com/cinemas/cinema-pathe-archamps,+33 4 50 43 28 00,22231,Archamps,74016,Haute-Savoie,74,Auvergne-Rhône-Alpes,84,"46.1387687570707,6.1219003211059",65599745
-Le Mimosa,,,2.0,500.0,,,,,,,,292231,Noirmoutier-en-l'Île,85163,Vendée,85,Pays de la Loire,52,"47.0051048901603,-2.24079447144205",67872562
-L'Eden,,,1.0,190.0,,no,,,,,,367911,La Souterraine,23176,Creuse,23,Nouvelle-Aquitaine,75,"46.2364606011916,1.48640908149954",67899641
-Le Trianon,,,1.0,340.0,,no,,,,,,441261,Valognes,50615,Manche,50,Normandie,28,"49.5073310159508,-1.47204020870445",69596326
-Le Commynes,,,1.0,223.0,,no,,,,,,23491,Argentonnay,79013,Deux-Sèvres,79,Nouvelle-Aquitaine,75,"46.9837946106697,-0.446277606057288",75082139
-Les Enfants du Paradis,,,11.0,2025.0,yes,yes,,,,https://enfantsparadis.cineparadis.fr,+33237881930,103166,Chartres,28085,Eure-et-Loir,28,Centre-Val de Loire,24,"48.4418012601613,1.48889493287968",102799327
-CGR Cherbourg,CGR,,12.0,2536.0,yes,yes,,,,https://www.cgrcinemas.fr/cherbourg/,,109836,Cherbourg-en-Cotentin,50129,Manche,50,Normandie,28,"49.641487368007,-1.61113100381087",112111939
-Le Galet,,,1.0,134.0,yes,no,,,,http://www.ville-saint-martin-de-crau.fr/Salle-de-cinema-le-Galet.html,,402493,Saint-Martin-de-Crau,13097,Bouches-du-Rhône,13,Provence-Alpes-Côte d'Azur,93,"43.6393575432217,4.81464490672353",158390622
-Maison pour Tous,,,1.0,279.0,,yes,,,,https://www.mpt-montauroux.com/,+33494504030,268972,Montauroux,83081,Var,83,Provence-Alpes-Côte d'Azur,93,"43.6180229635743,6.77201419749305",159995961
 Cinéma de Montreuil-sur-Mer,,,1.0,204.0,,no,,,,,,276221,Montreuil-sur-Mer,62588,Pas-de-Calais,62,Hauts-de-France,32,"50.4611909280593,1.7611692435905",448636130
 Cinéma La Brèche,,,2.0,512.0,,yes,,,,https://www.paysfoyen.fr/,+33 5 57 46 00 43,385793,Sainte-Foy-la-Grande,33402,Gironde,33,Nouvelle-Aquitaine,75,"44.843369942983,0.219561146195559",459571764
 CGR Pau - Saint-Louis,CGR,,7.0,1148.0,,yes,,,,https://www.cgrcinemas.fr/pau/,+33 5 59 27 18 26,305031,Pau,64445,Pyrénées-Atlantiques,64,Nouvelle-Aquitaine,75,"43.295750176994,-0.370114375421451",554257150
@@ -381,6 +367,53 @@ Le Fogata,,,2.0,615.0,,yes,,,,https://www.cinema-fogata.com,+33 3 81 67 92 02,12
 AlTiCiné,,,9.0,1499.0,,yes,,,,https://www.alticine.com/,,268583,Montargis,45208,Loiret,45,Centre-Val de Loire,24,"48.0019882299793,2.72956404483932",7945542460
 Cinéma Le Varlin,,,1.0,227.0,,yes,,,,,,182931,Grande-Synthe,59271,Nord,59,Hauts-de-France,32,"51.016551354206,2.30064814533395",179842895
 Cinéma Le Zoetrope,,,2.0,408.0,,no,,,,,+33 9 66 04 16 38,58143,Blaye,33058,Gironde,33,Nouvelle-Aquitaine,75,"45.1300409206275,-0.661430591276992",255918768
+Cinéma Vox,,Mo-Su 13:30-22:30,7.0,964.0,yes,yes,,,,https://www.cine-vox.com/,+33388755021,368764,Strasbourg,67482,Bas-Rhin,67,Grand Est,44,"48.5817942282476,7.74656576802943",633027271
+Salle Paul Lebrun,,,1.0,110.0,no,yes,,,,,,114523,Clermont,60157,Oise,60,Hauts-de-France,32,"49.3779175337708,2.41469097896564",1137672593
+Ciné-Meyzieu,,,3.0,408.0,,yes,,,,,,261603,Meyzieu,69282,Rhône,69,Auvergne-Rhône-Alpes,84,"45.76484427519,5.00325846188312",1198492913
+Le Cercle,,,1.0,186.0,,yes,,,,,,297962,Orbey,68249,Haut-Rhin,68,Grand Est,44,"48.1262223680652,7.16338605373383",1300541817
+Le Palace,,,1.0,280.0,,yes,,,,,,148811,Cherbourg-en-Cotentin,50129,Manche,50,Normandie,28,"49.6487043873417,-1.65361081704344",2155740871
+La Scala,,,2.0,299.0,,,,,,https://scala.thionville.fr,+33 3 82 82 25 34,426273,Thionville,57672,Moselle,57,Grand Est,44,"49.3594768438749,6.16293374178858",2523716979
+Les écrans,UGC,,5.0,638.0,yes,yes,,,,https://www.ugc.fr/cinema.html?id=52,,430886,Tourcoing,59599,Nord,59,Hauts-de-France,32,"50.7211653779936,3.16016965204804",3517691581
+Le Casino,,,2.0,360.0,,yes,,,,,,14033,Albert,80016,Somme,80,Hauts-de-France,32,"50.002547268002,2.64962524754029",4192529345
+"Cinema CGR Bordeaux, Le Français",CGR cinémas,,12.0,1900.0,,yes,,,,https://www.cgrcinemas.fr/,,62802,Bordeaux,33063,Gironde,33,Nouvelle-Aquitaine,75,"44.8423560679751,-0.578917641757499",4932032352
+Cinéma Variétés,,,5.0,749.0,,yes,,,,https://www.cinema-varietes.com/,,319302,Pont-de-Chéruy,38316,Isère,38,Auvergne-Rhône-Alpes,84,"45.7495478886316,5.17501245890676",5318166374
+L'Alba,,,2.0,232.0,,,,,,http://www.alba-cinemacorte.com/,,121792,Corte,2B096,Haute-Corse,2B,Corse,94,"42.3001234490764,9.1504533179925",528467625
+Pathé,Pathé Gaumont,Mo-Su 10:30-23:00,14.0,3021.0,yes,yes,,,,https://www.pathe.fr/cinemas/cinema-pathe-docks-76,+33 8 92 69 66 96,344590,Rouen,76540,Seine-Maritime,76,Normandie,28,"49.4460173957476,1.06574785512747",1195120422
+Le Majestic,,,1.0,166.0,,yes,,,,,,274732,Montmorillon,86165,Vienne,86,Nouvelle-Aquitaine,75,"46.4249797063125,0.870297745623026",63547194
+Cinema le Foyer,,,2.0,356.0,,yes,,,,https://cineparthenay.fr/,+33 5 49 64 05 30,304442,Parthenay,79202,Deux-Sèvres,79,Nouvelle-Aquitaine,75,"46.6448623540192,-0.244149916699541",64341508
+Cinéma Le Générique,,,1.0,182.0,,no,,,,,,269222,Montbazon,37154,Indre-et-Loire,37,Centre-Val de Loire,24,"47.2872266019616,0.713182823602818",64818481
+Pathé Gaumont,Pathé Gaumont,,16.0,3828.0,yes,yes,no,no,,https://www.pathe.fr/cinemas/cinema-pathe-grand-quevilly,+33892696696,183301,Le Grand-Quevilly,76322,Seine-Maritime,76,Normandie,28,"49.4135514411663,1.04123661752907",65365317
+Capitole Studios,,,11.0,2236.0,,yes,,,,,,721200,Le Pontet,84092,Vaucluse,84,Provence-Alpes-Côte d'Azur,93,"43.9800195164514,4.87338608948424",96499193
+Cinéma Le Club,,,1.0,198.0,,no,,,,https://www.cinemachemille.com,,108932,Chemillé-en-Anjou,49092,Maine-et-Loire,49,Pays de la Loire,52,"47.2118060070695,-0.725860147568966",97984223
+La Balise,Cinedys,,2.0,364.0,,yes,,,,https://www.cinemalabalise.fr/,+33 2 98 50 83 29,141712,Douarnenez,29046,Finistère,29,Bretagne,53,"48.0885224386295,-4.32871275669256",122882339
+Le Grand Club,SARL Le Club,,10.0,1275.0,,yes,,,,https://www.cinemas-legrandclub.fr/,+33 5 58 56 28 29,136666,Dax,40088,Landes,40,Nouvelle-Aquitaine,75,"43.7138952136673,-1.05552238797029",146744647
+Espace Aragon,Mairie d'Oissel,,1.0,198.0,yes,yes,,,,,+892687508,296615,Oissel,76484,Seine-Maritime,76,Normandie,28,"49.3398905767306,1.08864330569078",168028761
+Cinema Atmosphère,,,3.0,479.0,,yes,,,,https://www.oyonnax.fr/mes-loisirs/culture/cinemas/,+33 4 74 81 96 80,301633,Oyonnax,01283,Ain,01,Auvergne-Rhône-Alpes,84,"46.2590272885221,5.65505813525127",7631839865
+Rio Borvo,,,1.0,152.0,,no,,,,,,67304,Bourbon-Lancy,71047,Saône-et-Loire,71,Bourgogne-Franche-Comté,27,"46.6206730504847,3.76268457294623",7649509125
+Ciné Toiles,,"Mo-Su,PH 10:15-23:00",4.0,767.0,yes,yes,,,,,+33 8 92 68 04 76,138595,Digne-les-Bains,04070,Alpes-de-Haute-Provence,04,Provence-Alpes-Côte d'Azur,93,"44.0900617341463,6.23148153267482",7703453800
+Théatre Montjoie,Écran mobile 74,,,120.0,,,,,,,,6297601-,Saint-Gervais-les-Bains,74236,Haute-Savoie,74,Auvergne-Rhône-Alpes,84,"45.8935196484915,6.71213078986682",7731259476
+Les Récollets,Ciné Off,,1.0,127.0,,yes,,,,http://cine-off.fr/salle/montval-sur-loir/,,104164,Montval-sur-Loir,72071,Sarthe,72,Pays de la Loire,52,"47.696830376617,0.415683095944274",7767015669
+Cinéma Haritz Barne,,,1.0,193.0,yes,yes,,,,https://www.moncine.fr/hasparren/,+33 5 59 29 18 63,191591,Hasparren,64256,Pyrénées-Atlantiques,64,Nouvelle-Aquitaine,75,"43.3826239933407,-1.3072794627312",10922018719
+Le mail,,,1.0,220.0,yes,no,,,,https://www.noecinemas.com/pithiviers/,+33238342664,312443,Pithiviers,45252,Loiret,45,Centre-Val de Loire,24,"48.1732568309902,2.25253057303829",12484130441
+MEGA CGR de Fontaine Le Comte,CGR,,8.0,1501.0,,no,,,,https://www.cgrcinemas.fr/,,163150,Fontaine-le-Comte,86100,Vienne,86,Nouvelle-Aquitaine,75,"46.5293589460437,0.280444768711569",194362460
+Le Roc,,,1.0,153.0,yes,yes,,,,https://cinemaleroc.fr/,,158201,La Ferrière,85089,Vendée,85,Pays de la Loire,52,"46.7119236873019,-1.31441123239909",218766197
+Gén'Éric,,,3.0,621.0,,yes,,,,https://www.cinema-generic.info/,+33251889921,195211,Héric,44073,Loire-Atlantique,44,Pays de la Loire,52,"47.4134078481364,-1.65366874012227",262174596
+Cinéma Six n'Etoiles,,,3.0,450.0,,yes,,,voice_description,,,364205,Six-Fours-les-Plages,83129,Var,83,Provence-Alpes-Côte d'Azur,93,"43.0926639257667,5.84115797944294",304728320
+Grand Écran Libourne,Cinémas Grand Écran,,10.0,1367.0,,yes,,,,https://www.grandecran.fr/libourne,+33 5 57 55 88 88,225444,Libourne,33243,Gironde,33,Nouvelle-Aquitaine,75,"44.9133095889202,-0.23751631067033",316216094
+CGR Manosque,CGR,"Mo,Tu,Th 13:00-21:00; We,Su 10:30-21:00; Sa 10:30-22:30; Fr 13:00-22:30; PH 10:30-22:30",8.0,1214.0,,yes,,,,https://www.cgrcinemas.fr/manosque-la-villette/,,723960,Manosque,04112,Alpes-de-Haute-Provence,04,Provence-Alpes-Côte d'Azur,93,"43.8360176763732,5.78341423931935",625995385
+Véo Tulle,,,5.0,708.0,,yes,,,,,,436927,Tulle,19272,Corrèze,19,Nouvelle-Aquitaine,75,"45.272496703459,1.77643800414907",667327797
+Ciné Vauban,,,8.0,1458.0,,,,,,https://cinevauban.fr/,+33 2 23 15 15 65,399689,Saint-Malo,35288,Ille-et-Vilaine,35,Bretagne,53,"48.6573432914166,-1.97085086240146",783098024
+Le Long-Court,,,2.0,324.0,,no,,,,https://www.lelongcourt.fr/,,126311,Coutances,50147,Manche,50,Normandie,28,"49.0498246874761,-1.44661281568087",254376356
+Omnia République,Nord-Ouest Exploitation Cinémas,,8.0,1345.0,yes,no,,,,https://www.omnia-cinemas.com,+33 2 35 07 82 70,344532,Rouen,76540,Seine-Maritime,76,Normandie,28,"49.4384720263726,1.09741369726707",-12991526
+Pathé Archamps,Pathé Gaumont,Mo-Su 10:00-23:59,12.0,2554.0,yes,yes,,,,https://www.cinemaspathegaumont.com/cinemas/cinema-pathe-archamps,+33 4 50 43 28 00,22231,Archamps,74016,Haute-Savoie,74,Auvergne-Rhône-Alpes,84,"46.1387687570707,6.1219003211059",65599745
+Le Mimosa,,,2.0,500.0,,,,,,,,292231,Noirmoutier-en-l'Île,85163,Vendée,85,Pays de la Loire,52,"47.0051048901603,-2.24079447144205",67872562
+L'Eden,,,1.0,190.0,,no,,,,,,367911,La Souterraine,23176,Creuse,23,Nouvelle-Aquitaine,75,"46.2364606011916,1.48640908149954",67899641
+Le Trianon,,,1.0,340.0,,no,,,,,,441261,Valognes,50615,Manche,50,Normandie,28,"49.5073310159508,-1.47204020870445",69596326
+Le Commynes,,,1.0,223.0,,no,,,,,,23491,Argentonnay,79013,Deux-Sèvres,79,Nouvelle-Aquitaine,75,"46.9837946106697,-0.446277606057288",75082139
+Les Enfants du Paradis,,,11.0,2025.0,yes,yes,,,,https://enfantsparadis.cineparadis.fr,+33237881930,103166,Chartres,28085,Eure-et-Loir,28,Centre-Val de Loire,24,"48.4418012601613,1.48889493287968",102799327
+CGR Cherbourg,CGR,,12.0,2536.0,yes,yes,,,,https://www.cgrcinemas.fr/cherbourg/,,109836,Cherbourg-en-Cotentin,50129,Manche,50,Normandie,28,"49.641487368007,-1.61113100381087",112111939
+Le Galet,,,1.0,134.0,yes,no,,,,http://www.ville-saint-martin-de-crau.fr/Salle-de-cinema-le-Galet.html,,402493,Saint-Martin-de-Crau,13097,Bouches-du-Rhône,13,Provence-Alpes-Côte d'Azur,93,"43.6393575432217,4.81464490672353",158390622
+Maison pour Tous,,,1.0,279.0,,yes,,,,https://www.mpt-montauroux.com/,+33494504030,268972,Montauroux,83081,Var,83,Provence-Alpes-Côte d'Azur,93,"43.6180229635743,6.77201419749305",159995961
 Cinéma Théâtre,,,4.0,576.0,,yes,,,,,,104994,Château-Thierry,02168,Aisne,02,Hauts-de-France,32,"49.0460923819283,3.40317192556907",159767932
 Le Cigalon,,,1.0,93.0,,no,,,,,,131031,Cucuron,84042,Vaucluse,84,Provence-Alpes-Côte d'Azur,93,"43.7739744657789,5.44016684118318",2409730086
 Le 7e Art,,,1.0,200.0,,yes,,,,,,92441,Cerizay,79062,Deux-Sèvres,79,Nouvelle-Aquitaine,75,"46.8207540245593,-0.670391278927781",2698593253
@@ -448,39 +481,6 @@ Cosmos,,,2.0,304.0,yes,no,,,,,,368723,Strasbourg,67482,Bas-Rhin,67,Grand Est,44,
 Cinéma Le Dunois,,,3.0,412.0,,yes,,,,,,104181,Châteaudun,28088,Eure-et-Loir,28,Centre-Val de Loire,24,"48.0712100935188,1.33151079144037",1241657516
 CinéLit,,,1.0,192.0,,,,,,,+33 5 58 42 82 51,229552,Lit-et-Mixe,40157,Landes,40,Nouvelle-Aquitaine,75,"44.0336447364469,-1.25741342527618",1308026748
 Étoile,,,1.0,146.0,,yes,,,,,,278721,Mortagne-au-Perche,61293,Orne,61,Normandie,28,"48.5206609850896,0.546060247047023",1589818185
-Cinéma Vox,,Mo-Su 13:30-22:30,7.0,964.0,yes,yes,,,,https://www.cine-vox.com/,+33388755021,368764,Strasbourg,67482,Bas-Rhin,67,Grand Est,44,"48.5817942282476,7.74656576802943",633027271
-Salle Paul Lebrun,,,1.0,110.0,no,yes,,,,,,114523,Clermont,60157,Oise,60,Hauts-de-France,32,"49.3779175337708,2.41469097896564",1137672593
-Ciné-Meyzieu,,,3.0,408.0,,yes,,,,,,261603,Meyzieu,69282,Rhône,69,Auvergne-Rhône-Alpes,84,"45.76484427519,5.00325846188312",1198492913
-Le Cercle,,,1.0,186.0,,yes,,,,,,297962,Orbey,68249,Haut-Rhin,68,Grand Est,44,"48.1262223680652,7.16338605373383",1300541817
-Le Palace,,,1.0,280.0,,yes,,,,,,148811,Cherbourg-en-Cotentin,50129,Manche,50,Normandie,28,"49.6487043873417,-1.65361081704344",2155740871
-La Scala,,,2.0,299.0,,,,,,https://scala.thionville.fr,+33 3 82 82 25 34,426273,Thionville,57672,Moselle,57,Grand Est,44,"49.3594768438749,6.16293374178858",2523716979
-Les écrans,UGC,,5.0,638.0,yes,yes,,,,https://www.ugc.fr/cinema.html?id=52,,430886,Tourcoing,59599,Nord,59,Hauts-de-France,32,"50.7211653779936,3.16016965204804",3517691581
-Le Casino,,,2.0,360.0,,yes,,,,,,14033,Albert,80016,Somme,80,Hauts-de-France,32,"50.002547268002,2.64962524754029",4192529345
-"Cinema CGR Bordeaux, Le Français",CGR cinémas,,12.0,1900.0,,yes,,,,https://www.cgrcinemas.fr/,,62802,Bordeaux,33063,Gironde,33,Nouvelle-Aquitaine,75,"44.8423560679751,-0.578917641757499",4932032352
-Cinéma Variétés,,,5.0,749.0,,yes,,,,https://www.cinema-varietes.com/,,319302,Pont-de-Chéruy,38316,Isère,38,Auvergne-Rhône-Alpes,84,"45.7495478886316,5.17501245890676",5318166374
-L'Alba,,,2.0,232.0,,,,,,http://www.alba-cinemacorte.com/,,121792,Corte,2B096,Haute-Corse,2B,Corse,94,"42.3001234490764,9.1504533179925",528467625
-Pathé,Pathé Gaumont,Mo-Su 10:30-23:00,14.0,3021.0,yes,yes,,,,https://www.pathe.fr/cinemas/cinema-pathe-docks-76,+33 8 92 69 66 96,344590,Rouen,76540,Seine-Maritime,76,Normandie,28,"49.4460173957476,1.06574785512747",1195120422
-Le Majestic,,,1.0,166.0,,yes,,,,,,274732,Montmorillon,86165,Vienne,86,Nouvelle-Aquitaine,75,"46.4249797063125,0.870297745623026",63547194
-Cinema le Foyer,,,2.0,356.0,,yes,,,,https://cineparthenay.fr/,+33 5 49 64 05 30,304442,Parthenay,79202,Deux-Sèvres,79,Nouvelle-Aquitaine,75,"46.6448623540192,-0.244149916699541",64341508
-Cinéma Le Générique,,,1.0,182.0,,no,,,,,,269222,Montbazon,37154,Indre-et-Loire,37,Centre-Val de Loire,24,"47.2872266019616,0.713182823602818",64818481
-Pathé Gaumont,Pathé Gaumont,,16.0,3828.0,yes,yes,no,no,,https://www.pathe.fr/cinemas/cinema-pathe-grand-quevilly,+33892696696,183301,Le Grand-Quevilly,76322,Seine-Maritime,76,Normandie,28,"49.4135514411663,1.04123661752907",65365317
-Capitole Studios,,,11.0,2236.0,,yes,,,,,,721200,Le Pontet,84092,Vaucluse,84,Provence-Alpes-Côte d'Azur,93,"43.9800195164514,4.87338608948424",96499193
-Cinéma Le Club,,,1.0,198.0,,no,,,,https://www.cinemachemille.com,,108932,Chemillé-en-Anjou,49092,Maine-et-Loire,49,Pays de la Loire,52,"47.2118060070695,-0.725860147568966",97984223
-La Balise,Cinedys,,2.0,364.0,,yes,,,,https://www.cinemalabalise.fr/,+33 2 98 50 83 29,141712,Douarnenez,29046,Finistère,29,Bretagne,53,"48.0885224386295,-4.32871275669256",122882339
-Le Grand Club,SARL Le Club,,10.0,1275.0,,yes,,,,https://www.cinemas-legrandclub.fr/,+33 5 58 56 28 29,136666,Dax,40088,Landes,40,Nouvelle-Aquitaine,75,"43.7138952136673,-1.05552238797029",146744647
-Espace Aragon,Mairie d'Oissel,,1.0,198.0,yes,yes,,,,,+892687508,296615,Oissel,76484,Seine-Maritime,76,Normandie,28,"49.3398905767306,1.08864330569078",168028761
-Cinema Atmosphère,,,3.0,479.0,,yes,,,,https://www.oyonnax.fr/mes-loisirs/culture/cinemas/,+33 4 74 81 96 80,301633,Oyonnax,01283,Ain,01,Auvergne-Rhône-Alpes,84,"46.2590272885221,5.65505813525127",7631839865
-Rio Borvo,,,1.0,152.0,,no,,,,,,67304,Bourbon-Lancy,71047,Saône-et-Loire,71,Bourgogne-Franche-Comté,27,"46.6206730504847,3.76268457294623",7649509125
-Ciné Toiles,,"Mo-Su,PH 10:15-23:00",4.0,767.0,yes,yes,,,,,+33 8 92 68 04 76,138595,Digne-les-Bains,04070,Alpes-de-Haute-Provence,04,Provence-Alpes-Côte d'Azur,93,"44.0900617341463,6.23148153267482",7703453800
-Théatre Montjoie,Écran mobile 74,,,120.0,,,,,,,,6297601-,Saint-Gervais-les-Bains,74236,Haute-Savoie,74,Auvergne-Rhône-Alpes,84,"45.8935196484915,6.71213078986682",7731259476
-Les Récollets,Ciné Off,,1.0,127.0,,yes,,,,http://cine-off.fr/salle/montval-sur-loir/,,104164,Montval-sur-Loir,72071,Sarthe,72,Pays de la Loire,52,"47.696830376617,0.415683095944274",7767015669
-Cinéma Haritz Barne,,,1.0,193.0,yes,yes,,,,https://www.moncine.fr/hasparren/,+33 5 59 29 18 63,191591,Hasparren,64256,Pyrénées-Atlantiques,64,Nouvelle-Aquitaine,75,"43.3826239933407,-1.3072794627312",10922018719
-Le mail,,,1.0,220.0,yes,no,,,,https://www.noecinemas.com/pithiviers/,+33238342664,312443,Pithiviers,45252,Loiret,45,Centre-Val de Loire,24,"48.1732568309902,2.25253057303829",12484130441
-MEGA CGR de Fontaine Le Comte,CGR,,8.0,1501.0,,no,,,,https://www.cgrcinemas.fr/,,163150,Fontaine-le-Comte,86100,Vienne,86,Nouvelle-Aquitaine,75,"46.5293589460437,0.280444768711569",194362460
-Le Roc,,,1.0,153.0,yes,yes,,,,https://cinemaleroc.fr/,,158201,La Ferrière,85089,Vendée,85,Pays de la Loire,52,"46.7119236873019,-1.31441123239909",218766197
-Gén'Éric,,,3.0,621.0,,yes,,,,https://www.cinema-generic.info/,+33251889921,195211,Héric,44073,Loire-Atlantique,44,Pays de la Loire,52,"47.4134078481364,-1.65366874012227",262174596
-Cinéma Six n'Etoiles,,,3.0,450.0,,yes,,,voice_description,,,364205,Six-Fours-les-Plages,83129,Var,83,Provence-Alpes-Côte d'Azur,93,"43.0926639257667,5.84115797944294",304728320
-Grand Écran Libourne,Cinémas Grand Écran,,10.0,1367.0,,yes,,,,https://www.grandecran.fr/libourne,+33 5 57 55 88 88,225444,Libourne,33243,Gironde,33,Nouvelle-Aquitaine,75,"44.9133095889202,-0.23751631067033",316216094
 Cinéma Andronis,,,1.0,120.0,,no,,,,,,271162,Montendre,17240,Charente-Maritime,17,Nouvelle-Aquitaine,75,"45.2836611500704,-0.408874961945976",565872905
 Le Lido,CGR,,6.0,1076.0,,yes,,,,https://www.cine-royan.com/,,346502,Royan,17306,Charente-Maritime,17,Nouvelle-Aquitaine,75,"45.6265907410605,-1.01785162555194",580378205
 UGC Ciné Cité Strasbourg,UGC,,22.0,5412.0,yes,yes,,,voice_description,https://www.ugc.fr/cinema.html?id=30,+33146372824,369792,Strasbourg,67482,Bas-Rhin,67,Grand Est,44,"48.5730653555546,7.7639775152307",43799904
@@ -551,21 +551,6 @@ Les Lobis,,,3.0,683.0,,yes,,,,,,58735,Blois,41018,Loir-et-Cher,41,Centre-Val de 
 Le Club,Toile d'Essai,,1.0,256.0,,no,,,,https://www.cinemaleclub.fr/,+33 2 98 92 41 94,141711,Douarnenez,29046,Finistère,29,Bretagne,53,"48.0913390804055,-4.33049354342965",122880582
 Pathé Angers,Pathé Gaumont,"Mo-Su,PH 10:00-00:30+",12.0,2522.0,yes,yes,,,,https://www.cinemasgaumontpathe.com/cinemas/cinema-pathe-angers/,,18866,Angers,49007,Maine-et-Loire,49,Pays de la Loire,52,"47.4794012549507,-0.55035143707312",145456257
 Le Cinéma,,,2.0,291.0,yes,no,,,voice_description,,,310925,Pierrelatte,26235,Drôme,26,Auvergne-Rhône-Alpes,84,"44.376124497214,4.70028197250425",175514411
-CGR Le Colisée,CGR,,7.0,1126.0,yes,yes,,,,https://www.cgrcinemas.fr/lemans/,,244481,Le Mans,72181,Sarthe,72,Pays de la Loire,52,"48.0028164458319,0.194185688709041",2106404260
-Cinéma Jean Perrin,Cinéode,,1.0,137.0,,,,,,https://www.cineode.fr/villars-les-dombes/,+33 4 74 98 26 11,455071,Villars-les-Dombes,01443,Ain,01,Auvergne-Rhône-Alpes,84,"45.9997060403022,5.03001852595489",2742131995
-Cine Dyke,,"PH,Mo-Su 13:30-21:00",6.0,1151.0,yes,yes,,,,http://cine-dyke.fr/,,328244,Le Puy-en-Velay,43157,Haute-Loire,43,Auvergne-Rhône-Alpes,84,"45.0405049295493,3.88491007175565",3092311511
-Le Domino,,,2.0,237.0,,no,,,,,,258732,Méru,60395,Oise,60,Hauts-de-France,32,"49.2345584910329,2.13522499993462",3137303466
-,,,1.0,97.0,yes,,,,,,,177663,Gimont,32147,Gers,32,Occitanie,76,"43.6265676343604,0.878707557695265",3543153500
-Rex,,,1.0,192.0,,no,,,,,,364991,Solre-le-Château,59572,Nord,59,Hauts-de-France,32,"50.1744028536921,4.09344335699049",4548989485
-Le Strapontin,,,1.0,199.0,,yes,,,,http://www.le-strapontin.com,,349322,Sain-Bel,69171,Rhône,69,Auvergne-Rhône-Alpes,84,"45.8116191505737,4.59693891620546",6077281381
-Ciné Lumière,,,7.0,1191.0,,no,,,,,,720650,Vierzon,18279,Cher,18,Centre-Val de Loire,24,"47.2246695565878,2.05945787584506",306991099
-Cinéma Rex Cestas,,,2.0,544.0,limited,yes,,,,,,93261,Cestas,33122,Gironde,33,Nouvelle-Aquitaine,75,"44.7420438815465,-0.685466718518569",495420979
-L'Estran,,,1.0,248.0,,yes,,,,,+33 5 57 87 29 23,86031,Carcans,33097,Gironde,33,Nouvelle-Aquitaine,75,"45.0708350976398,-1.14262963156131",620823822
-Salle Lino Ventura,,,1.0,175.0,,yes,,,,https://mairie-athis-mons.fr/?p=cinema&ctn=salle-lino-ventura,,27573,Athis-Mons,91027,Essonne,91,Île-de-France,11,"48.7098101972263,2.38762036538131",632214644
-Le Royal,,,3.0,386.0,,yes,,,voice_description,,+33 8 92 68 03 89,429951,Toulon,83137,Var,83,Provence-Alpes-Côte d'Azur,93,"43.1248607732827,5.93006469033688",1785639978
-L'Espace Culturel Saint-Grégoire,,Th-Su 17:00-21:00+,1.0,247.0,,yes,,,,,,282842,Munster,68226,Haut-Rhin,68,Grand Est,44,"48.04003922054,7.1402510789656",1852732936
-Cinéma Lux Louis Delluc,,,2.0,281.0,,yes,,,,,,78542,Le Buisson-de-Cadouin,24068,Dordogne,24,Nouvelle-Aquitaine,75,"44.8449662764424,0.908870255360341",1866391047
-Le Cinématographe de Sainte-Tulle,,,1.0,218.0,,yes,,,,https://ville-sainte-tulle.fr,+33 4 92 78 20 23,418651,Sainte-Tulle,04197,Alpes-de-Haute-Provence,04,Provence-Alpes-Côte d'Azur,93,"43.7863551234994,5.76526767294726",2041956726
 Cinéma Gérard Philipe,,,1.0,240.0,,yes,,,,,,468533,Wittenheim,68376,Haut-Rhin,68,Grand Est,44,"47.8225028026562,7.33769857224778",36262803
 Centre culturel La Coupole,,,1.0,177.0,,yes,,,,https://www.lagaude.fr/-Centre-culturel-et-Cinema-.html,+33 4 93 24 49 81,173991,La Gaude,06065,Alpes-Maritimes,06,Provence-Alpes-Côte d'Azur,93,"43.7205544345552,7.14982572261095",59214317
 L'Alhambra cinémarseille,,,1.0,256.0,yes,yes,,,,https://www.alhambracine.com/,+33 4 91 46 02 83,249942,Marseille 16e Arrondissement,13216,Bouches-du-Rhône,13,Provence-Alpes-Côte d'Azur,93,"43.3607728199904,5.33006564881063",69642070
@@ -590,6 +575,21 @@ CGR Beaune,CGR,,6.0,898.0,,yes,,,,https://www.cgrcinemas.fr/beaune/,+33 3 80 24 
 Le Starting Block,,,1.0,150.0,,,,,,https://www.lestartingblock.com,+33 4 50 73 60 72,,Bernex,74033,Haute-Savoie,74,Auvergne-Rhône-Alpes,84,"46.3607944895227,6.6748923409998",7732309605
 Pathé Orléans,Pathé Gaumont,,12.0,2309.0,yes,yes,,,,https://www.pathe.fr/cinemas/cinema-pathe-orleans,+33 8 09 103 103,298834,Orléans,45234,Loiret,45,Centre-Val de Loire,24,"47.8985722248054,1.90879735725272",9482866875
 Le Club,,,1.0,188.0,,yes,,,,,,177112,Gien,45155,Loiret,45,Centre-Val de Loire,24,"47.6847834862808,2.63066932205629",12479980058
+CGR Le Colisée,CGR,,7.0,1126.0,yes,yes,,,,https://www.cgrcinemas.fr/lemans/,,244481,Le Mans,72181,Sarthe,72,Pays de la Loire,52,"48.0028164458319,0.194185688709041",2106404260
+Cinéma Jean Perrin,Cinéode,,1.0,137.0,,,,,,https://www.cineode.fr/villars-les-dombes/,+33 4 74 98 26 11,455071,Villars-les-Dombes,01443,Ain,01,Auvergne-Rhône-Alpes,84,"45.9997060403022,5.03001852595489",2742131995
+Cine Dyke,,"PH,Mo-Su 13:30-21:00",6.0,1151.0,yes,yes,,,,http://cine-dyke.fr/,,328244,Le Puy-en-Velay,43157,Haute-Loire,43,Auvergne-Rhône-Alpes,84,"45.0405049295493,3.88491007175565",3092311511
+Le Domino,,,2.0,237.0,,no,,,,,,258732,Méru,60395,Oise,60,Hauts-de-France,32,"49.2345584910329,2.13522499993462",3137303466
+,,,1.0,97.0,yes,,,,,,,177663,Gimont,32147,Gers,32,Occitanie,76,"43.6265676343604,0.878707557695265",3543153500
+Rex,,,1.0,192.0,,no,,,,,,364991,Solre-le-Château,59572,Nord,59,Hauts-de-France,32,"50.1744028536921,4.09344335699049",4548989485
+Le Strapontin,,,1.0,199.0,,yes,,,,http://www.le-strapontin.com,,349322,Sain-Bel,69171,Rhône,69,Auvergne-Rhône-Alpes,84,"45.8116191505737,4.59693891620546",6077281381
+Ciné Lumière,,,7.0,1191.0,,no,,,,,,720650,Vierzon,18279,Cher,18,Centre-Val de Loire,24,"47.2246695565878,2.05945787584506",306991099
+Cinéma Rex Cestas,,,2.0,544.0,limited,yes,,,,,,93261,Cestas,33122,Gironde,33,Nouvelle-Aquitaine,75,"44.7420438815465,-0.685466718518569",495420979
+L'Estran,,,1.0,248.0,,yes,,,,,+33 5 57 87 29 23,86031,Carcans,33097,Gironde,33,Nouvelle-Aquitaine,75,"45.0708350976398,-1.14262963156131",620823822
+Salle Lino Ventura,,,1.0,175.0,,yes,,,,https://mairie-athis-mons.fr/?p=cinema&ctn=salle-lino-ventura,,27573,Athis-Mons,91027,Essonne,91,Île-de-France,11,"48.7098101972263,2.38762036538131",632214644
+Le Royal,,,3.0,386.0,,yes,,,voice_description,,+33 8 92 68 03 89,429951,Toulon,83137,Var,83,Provence-Alpes-Côte d'Azur,93,"43.1248607732827,5.93006469033688",1785639978
+L'Espace Culturel Saint-Grégoire,,Th-Su 17:00-21:00+,1.0,247.0,,yes,,,,,,282842,Munster,68226,Haut-Rhin,68,Grand Est,44,"48.04003922054,7.1402510789656",1852732936
+Cinéma Lux Louis Delluc,,,2.0,281.0,,yes,,,,,,78542,Le Buisson-de-Cadouin,24068,Dordogne,24,Nouvelle-Aquitaine,75,"44.8449662764424,0.908870255360341",1866391047
+Le Cinématographe de Sainte-Tulle,,,1.0,218.0,,yes,,,,https://ville-sainte-tulle.fr,+33 4 92 78 20 23,418651,Sainte-Tulle,04197,Alpes-de-Haute-Provence,04,Provence-Alpes-Côte d'Azur,93,"43.7863551234994,5.76526767294726",2041956726
 Le Séjéfy's,,,1.0,167.0,,,,,,,,417332,Saint-Sulpice-la-Pointe,81271,Tarn,81,Occitanie,76,"43.7718735417484,1.68816135820663",245924281
 CGR Châteauroux,CGR,,8.0,1078.0,yes,yes,,,,https://www.cgrcinemas.fr/chateauroux/,,104881,Châteauroux,36044,Indre,36,Centre-Val de Loire,24,"46.8087571741851,1.69021358337963",356931302
 Cinéma Victor Hugo,,,3.0,337.0,,,,,,https://www.cinemavictorhugo.fr,+33 3 81 94 53 89,52141,Besançon,25056,Doubs,25,Bourgogne-Franche-Comté,27,"47.2396683855836,6.02492654422699",378774907
@@ -611,6 +611,15 @@ Cinéville Quimper,,,10.0,1987.0,,yes,no,no,,https://quimper.cineville.fr/,,7215
 Les Toiles,,,4.0,548.0,,yes,,,,https://www.les-toiles-cinemas.fr/,,128114,Crépy-en-Valois,60176,Oise,60,Hauts-de-France,32,"49.2315395262645,2.89021090465614",248028523
 Cinéma de la Gare,,,1.0,240.0,,,,,,https://www.cinemadelagare.fr/,+33 2 31 37 41 30,125513,Courseulles-sur-Mer,14191,Calvados,14,Normandie,28,"49.3351650982922,-0.457215787355713",280966911
 Les Toiles du Moun,,,4.0,299.0,yes,no,,,,https://toilesdumoun.fr/,+33 5 58 71 56 80,411540,Saint-Pierre-du-Mont,40281,Landes,40,Nouvelle-Aquitaine,75,"43.885703577323,-0.520411216765893",350096370
+Lumière Terreaux,,,4.0,326.0,no,no,,,,,,238351,Lyon 1er Arrondissement,69381,Rhône,69,Auvergne-Rhône-Alpes,84,"45.7653285815554,4.83419153537886",35967996
+MK2 Nation,MK2,,6.0,551.0,yes,,,,,https://www.mk2.com/salle/nation,,6212,Paris 12e Arrondissement,75112,Paris,75,Île-de-France,11,"48.8482398427079,2.39313934570689",428064589
+Le ciné de Montguyon,,,1.0,133.0,yes,yes,,,voice_description,,,272481,Montguyon,17241,Charente-Maritime,17,Nouvelle-Aquitaine,75,"45.2173746535368,-0.185801269958745",441120344
+Les Ambiances,,,3.0,269.0,yes,no,,,,,,114717,Clermont-Ferrand,63113,Puy-de-Dôme,63,Auvergne-Rhône-Alpes,84,"45.7785093757528,3.08106946416154",491063156
+CinéDuchère,,"""pas d'horaire d'ouverture fixe, dépends des horaires de films""",1.0,91.0,yes,yes,,,,,,238013,Lyon 9e Arrondissement,69389,Rhône,69,Auvergne-Rhône-Alpes,84,"45.788332463358,4.80090196873493",767880812
+Le Vagabond,,,2.0,439.0,,yes,,,,https://www.cinema-barsuraube.com/,,40293,Bar-sur-Aube,10033,Aube,10,Grand Est,44,"48.2303839435263,4.70990467512198",1280450933
+Le Toboggan,,,1.0,144.0,,yes,,,,,,136753,Décines-Charpieu,69275,Rhône,69,Auvergne-Rhône-Alpes,84,"45.7688222426172,4.95571178085524",1798245104
+Central cinéma,,,1.0,212.0,,no,,,,,+33492505611,376802,Saint-Bonnet-en-Champsaur,05132,Hautes-Alpes,05,Provence-Alpes-Côte d'Azur,93,"44.6817797579285,6.07533078368479",1826812311
+Odéon,,,1.0,266.0,,no,,,,,,175404,Genlis,21292,Côte-d'Or,21,Bourgogne-Franche-Comté,27,"47.2413475322463,5.21798656029639",1882605628
 Cinéma Le Club,,,1.0,161.0,,yes,,,,,,339491,La Roche-Chalais,24354,Dordogne,24,Nouvelle-Aquitaine,75,"45.1507597295224,0.0113944854055319",2291163195
 Cinéma La Capitelle,,,2.0,348.0,,yes,,,,,,266962,Monistrol-sur-Loire,43137,Haute-Loire,43,Auvergne-Rhône-Alpes,84,"45.2828990919484,4.17732759993231",2301702201
 Agora,Association Rive Droite Rive Gauche,,1.0,194.0,,yes,,,,https://cinema-chateaulin.fr/,+33 9 63 62 65 29,104391,Châteaulin,29026,Finistère,29,Bretagne,53,"48.1953036670884,-4.09425288019315",2435184192
@@ -676,24 +685,6 @@ Le Mont d'Or,Cinéode,,2.0,212.0,,no,,,,https://www.cineode.fr/metabief/,,260602
 La Boite à Images,,,2.0,253.0,yes,no,,,,,,75021,Brignoles,83023,Var,83,Provence-Alpes-Côte d'Azur,93,"43.4071332904953,6.06351260523293",120977957
 Florida,,,1.0,188.0,,yes,,,,,,416021,Saint-Savinien,17397,Charente-Maritime,17,Nouvelle-Aquitaine,75,"45.8756823291004,-0.680793386997971",122308781
 Lutétia,,,1.0,184.0,,,,,,http://cine-lutetia.net/,+33 2 51 80 03 54,390791,Saint-Herblain,44162,Loire-Atlantique,44,Pays de la Loire,52,"47.2140823652412,-1.649684823818",134671717
-Lumière Terreaux,,,4.0,326.0,no,no,,,,,,238351,Lyon 1er Arrondissement,69381,Rhône,69,Auvergne-Rhône-Alpes,84,"45.7653285815554,4.83419153537886",35967996
-MK2 Nation,MK2,,6.0,551.0,yes,,,,,https://www.mk2.com/salle/nation,,6212,Paris 12e Arrondissement,75112,Paris,75,Île-de-France,11,"48.8482398427079,2.39313934570689",428064589
-Le ciné de Montguyon,,,1.0,133.0,yes,yes,,,voice_description,,,272481,Montguyon,17241,Charente-Maritime,17,Nouvelle-Aquitaine,75,"45.2173746535368,-0.185801269958745",441120344
-Les Ambiances,,,3.0,269.0,yes,no,,,,,,114717,Clermont-Ferrand,63113,Puy-de-Dôme,63,Auvergne-Rhône-Alpes,84,"45.7785093757528,3.08106946416154",491063156
-CinéDuchère,,"""pas d'horaire d'ouverture fixe, dépends des horaires de films""",1.0,91.0,yes,yes,,,,,,238013,Lyon 9e Arrondissement,69389,Rhône,69,Auvergne-Rhône-Alpes,84,"45.788332463358,4.80090196873493",767880812
-Le Vagabond,,,2.0,439.0,,yes,,,,https://www.cinema-barsuraube.com/,,40293,Bar-sur-Aube,10033,Aube,10,Grand Est,44,"48.2303839435263,4.70990467512198",1280450933
-Le Toboggan,,,1.0,144.0,,yes,,,,,,136753,Décines-Charpieu,69275,Rhône,69,Auvergne-Rhône-Alpes,84,"45.7688222426172,4.95571178085524",1798245104
-Central cinéma,,,1.0,212.0,,no,,,,,+33492505611,376802,Saint-Bonnet-en-Champsaur,05132,Hautes-Alpes,05,Provence-Alpes-Côte d'Azur,93,"44.6817797579285,6.07533078368479",1826812311
-Odéon,,,1.0,266.0,,no,,,,,,175404,Genlis,21292,Côte-d'Or,21,Bourgogne-Franche-Comté,27,"47.2413475322463,5.21798656029639",1882605628
-Les Cinoches RN7,,,1.0,291.0,,,,,,https://cinemas.grandparissud.fr/les-cinoches,+33 1 69 02 72 72,338335,Ris-Orangis,91521,Essonne,91,Île-de-France,11,"48.6560432220343,2.40827144696311",2260145097
-CGR Rodez,CGR cinémas,,10.0,1600.0,yes,yes,,,voice_description,https://www.cgrcinemas.fr/,,340874,Rodez,12202,Aveyron,12,Occitanie,76,"44.3521058436121,2.56629488076015",2469788380
-Auditorium de Méribel,Écran mobile 74,,1.0,311.0,,,,,,http://www.cinemameribel.fr,+33 9 67 43 11 61,715700,Les Allues,73015,Savoie,73,Auvergne-Rhône-Alpes,84,"45.3965934897078,6.56673704013357",3379388976
-Cinéma Arcs en ciel,,,4.0,540.0,,yes,,,,https://arcsenciel-cine.fr/,+33 3 28 48 08 34,193731,Hazebrouck,59295,Nord,59,Hauts-de-France,32,"50.7229747794316,2.53651062602339",3618973751
-À l'Affiche,Nord Ouest Exploitation Cinémas,,8.0,1134.0,,yes,,,,https://www.chaumont-cinemas.com/,+33 3 25 35 00 46,107043,Chaumont,52121,Haute-Marne,52,Grand Est,44,"48.1101296168862,5.13565213125136",4076456404
-Iris,,,1.0,193.0,,no,,,,,+33478590266,168071,Francheville,69089,Rhône,69,Auvergne-Rhône-Alpes,84,"45.7337322431715,4.76817927020261",6123037064
-Variétés Cinéma,,,1.0,187.0,,,,,,http://varietescinema.fr,+33 2 38 82 85 85,158812,La Ferté-Saint-Aubin,45146,Loiret,45,Centre-Val de Loire,24,"47.7184008691579,1.94155643324481",6175119700
-Club de l'Étoile,,,1.0,161.0,,,,,,https://clubdeletoile.fr,+33 1 43 80 73 69,9802,Paris 17e Arrondissement,75117,Paris,75,Île-de-France,11,"48.8761288653181,2.29535187233307",6576684299
-Cinéma Confluent,,,1.0,254.0,,no,,,,https://www.cinemaconfluent.com,,12562,Aiguillon,47004,Lot-et-Garonne,47,Nouvelle-Aquitaine,75,"44.3018600221243,0.338905952522282",6923425224
 L'Équinoxe,Cinéode,,1.0,208.0,,no,,,,https://www.cineode.fr/tour-du-pin-equinoxe/,+33 4 74 88 11 75,431023,La Tour-du-Pin,38509,Isère,38,Auvergne-Rhône-Alpes,84,"45.5615317421659,5.44975146364308",4234415281
 Sonhir,,,3.0,436.0,,yes,,,,,,196901,Hirson,02381,Aisne,02,Hauts-de-France,32,"49.9200398364754,4.08413123020276",4243513800
 Family Cinéma,,,8.0,1632.0,,yes,,,,https://family-cinema.com/,+33477554263,396275,Saint-Just-Saint-Rambert,42279,Loire,42,Auvergne-Rhône-Alpes,84,"45.5108148577197,4.26286576000834",4586853554
@@ -741,6 +732,15 @@ Cinéma Rex,,,3.0,360.0,,yes,,,,http://rex-peage.fr/,+33 4 74 86 20 53,305632,Le
 Grand Écran Sainte-Eulalie,Cinémas Grand Écran,,7.0,1251.0,,no,,,,https://www.grandecran.fr/sainte-eulalie,+33 5 57 34 00 12,384532,Sainte-Eulalie,33397,Gironde,33,Nouvelle-Aquitaine,75,"44.9067991274348,-0.485684974896184",163498245
 Palace Lumière,,Mo-Su 10:00-22:00,4.0,576.0,,yes,,,,https://www.cinema-altkirch.com,+33 3 89 40 27 24,16081,Altkirch,68004,Haut-Rhin,68,Grand Est,44,"47.62375387877,7.23618331045616",173124360
 Jeanne d'Arc,Cinéma Jeanne d'Arc,,1.0,186.0,,yes,,,,http://cinemuz.fr/,+33 2 97 45 66 10,283551,Muzillac,56143,Morbihan,56,Bretagne,53,"47.5536966064482,-2.48452939062338",176636205
+Les Cinoches RN7,,,1.0,291.0,,,,,,https://cinemas.grandparissud.fr/les-cinoches,+33 1 69 02 72 72,338335,Ris-Orangis,91521,Essonne,91,Île-de-France,11,"48.6560432220343,2.40827144696311",2260145097
+CGR Rodez,CGR cinémas,,10.0,1600.0,yes,yes,,,voice_description,https://www.cgrcinemas.fr/,,340874,Rodez,12202,Aveyron,12,Occitanie,76,"44.3521058436121,2.56629488076015",2469788380
+Auditorium de Méribel,Écran mobile 74,,1.0,311.0,,,,,,http://www.cinemameribel.fr,+33 9 67 43 11 61,715700,Les Allues,73015,Savoie,73,Auvergne-Rhône-Alpes,84,"45.3965934897078,6.56673704013357",3379388976
+Cinéma Arcs en ciel,,,4.0,540.0,,yes,,,,https://arcsenciel-cine.fr/,+33 3 28 48 08 34,193731,Hazebrouck,59295,Nord,59,Hauts-de-France,32,"50.7229747794316,2.53651062602339",3618973751
+À l'Affiche,Nord Ouest Exploitation Cinémas,,8.0,1134.0,,yes,,,,https://www.chaumont-cinemas.com/,+33 3 25 35 00 46,107043,Chaumont,52121,Haute-Marne,52,Grand Est,44,"48.1101296168862,5.13565213125136",4076456404
+Iris,,,1.0,193.0,,no,,,,,+33478590266,168071,Francheville,69089,Rhône,69,Auvergne-Rhône-Alpes,84,"45.7337322431715,4.76817927020261",6123037064
+Variétés Cinéma,,,1.0,187.0,,,,,,http://varietescinema.fr,+33 2 38 82 85 85,158812,La Ferté-Saint-Aubin,45146,Loiret,45,Centre-Val de Loire,24,"47.7184008691579,1.94155643324481",6175119700
+Club de l'Étoile,,,1.0,161.0,,,,,,https://clubdeletoile.fr,+33 1 43 80 73 69,9802,Paris 17e Arrondissement,75117,Paris,75,Île-de-France,11,"48.8761288653181,2.29535187233307",6576684299
+Cinéma Confluent,,,1.0,254.0,,no,,,,https://www.cinemaconfluent.com,,12562,Aiguillon,47004,Lot-et-Garonne,47,Nouvelle-Aquitaine,75,"44.3018600221243,0.338905952522282",6923425224
 L'Ambiance,Nord Ouest Exploitation Cinémas,,1.0,306.0,,yes,,,,https://www.cinema-senonches.com/,+33 2 37 37 70 91,359622,Senonches,28373,Eure-et-Loir,28,Centre-Val de Loire,24,"48.5616043736957,1.03313394126842",398975692
 Cinéma Saint-Joseph,,,1.0,185.0,yes,yes,,,,https://www.cinestjoseph44.fr/,+33240821134,321135,Pornic,44131,Loire-Atlantique,44,Pays de la Loire,52,"47.1142233997718,-2.12776890118563",508653692
 U Sampieru,,,1.0,300.0,,,yes,,,,,451772,Vico,2A348,Corse-du-Sud,2A,Corse,94,"42.1148957163467,8.69978293820699",702075603

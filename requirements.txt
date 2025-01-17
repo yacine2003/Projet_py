@@ -3,4 +3,4 @@ dash
 plotly
 folium
 flask
-dash-bootstrap-components
+numpy

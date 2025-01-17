@@ -3,17 +3,17 @@ from dash import dcc, html
 def create_pie_chart(valid_brands, regions):
     """
     Crée l'interface utilisateur avec des filtres pour afficher un diagramme circulaire de la répartition des cinémas
-    par région avec un filtre supplémentaire pour les marques.
+    par région avec un filtre supplémentaire pour les marques
     
     Args:
-        valid_brands (list): Liste des marques de cinémas disponibles.
-        regions (list): Liste des régions disponibles pour filtrer les données.
+        valid_brands (list): Liste des marques de cinémas disponibles
+        regions (list): Liste des régions disponibles pour filtrer les données
     
     Returns:
-        html.Div: Le composant contenant le diagramme circulaire et les filtres.
+        html.Div: Le composant contenant le diagramme circulaire et les filtres
     """
     return html.Div([
-        html.H2("Diagramme circulaire des Cinémas par Région", style={'textAlign': 'center', 'marginBottom': '20px'}),
+        html.H2("Diagramme circulaire de la répartition des Cinémas par Région", style={'textAlign': 'center', 'marginBottom': '20px'}),
         
         html.Label("Filtrer par Marque :", style={'marginBottom': '7px', 'display': 'block'}),
         dcc.Dropdown(

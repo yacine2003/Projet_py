@@ -2,10 +2,10 @@ from dash import Input, Output, dash
 
 def register_menu_callbacks(app: dash.Dash):
     """
-    Enregistre un callback pour gérer l'ouverture et la fermeture du menu latéral.
+    Enregistre un callback pour gérer l'ouverture et la fermeture du menu latéral
 
     Args:
-        app (dash.Dash): L'application Dash.
+        app (dash.Dash): L'application Dash
     """
     @app.callback(
         Output('side-menu', 'style'),
@@ -14,17 +14,16 @@ def register_menu_callbacks(app: dash.Dash):
     )
     def toggle_menu(n_clicks: int) -> dict:
         """
-        Gère le style du menu latéral en fonction du nombre de clics sur l'icône du menu.
+        Gère le style du menu latéral en fonction du nombre de clics sur l'icône du menu
 
         Args:
-            n_clicks (int): Nombre de clics sur l'icône du menu.
+            n_clicks (int): Nombre de clics sur l'icône du menu
 
         Returns:
-            dict: Style CSS appliqué au menu latéral.
+            dict: Style CSS appliqué au menu latéral
         """
-        # Vérifier si aucun clic n'a été effectué
+        #vérifie si aucun clic n'a été effectué
         if n_clicks is None or n_clicks % 2 == 0:
-            # Menu masqué
             return {
                 'position': 'fixed',
                 'top': '0',
@@ -39,7 +38,6 @@ def register_menu_callbacks(app: dash.Dash):
                 'zIndex': '999'
             }
         else:
-            # Menu affiché
             return {
                 'position': 'fixed',
                 'top': '0',
