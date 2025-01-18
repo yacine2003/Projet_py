@@ -116,10 +116,11 @@ data_project
 
 ### Ajouter une Nouvelle Page
 
-1. Créez un nouveau fichier dans `src/pages/`, par exemple `nouvelle_page.py` et implémentez le layout.
-2. Créez un nouveau fichier dans src/pages/, par exemple nouvelle\_page.py
+1. Créez un nouveau fichier dans `src/pages/`, par exemple `nouvelle_page.py`.
+2. Créez un nouveau fichier dans src/callbacks/, par exemple `nouveau_callback.py`.
 3. Implémentez le layout et les callbacks spécifiques à la page.
 4. Ajoutez la nouvelle page à la navigation dans `menu.py`.
+5. Importez et appelez le callback dans `main.py`.
 
 ### Scripts Clés
 
