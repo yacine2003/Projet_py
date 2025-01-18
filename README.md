@@ -124,12 +124,12 @@ data_project
 
 ### Scripts Clés
 
-- **`main.py`**\*\* :\*\* Point d'entrée du dashboard.
-- **`get_data.py`**\*\* :\*\* Récupère les données depuis OpenStreetMap et les stocke dans `data/raw/`.
-- **`clean_data.py`**\*\* :\*\* Prépare et nettoie les données pour l'analyse.
-- **`callbacks/`**\*\* :\*\* Contient les scripts pour gérer les interactions dynamiques (histogrammes, cartes, etc.).
-- **`components/`**\*\* :\*\* Contient les composants réutilisables de l'interface utilisateur (ex. menu).
-- **`pages/`**\*\* :\*\* Organise les différentes pages du dashboard.
+- **`main.py`** : Point d'entrée du dashboard.
+- **`get_data.py`** : Récupère les données depuis OpenStreetMap et les stocke dans `data/raw/`.
+- **`clean_data.py`** : Prépare et nettoie les données pour l'analyse.
+- **`callbacks/`** : Contient les scripts pour gérer les interactions dynamiques (histogrammes, cartes, etc.).
+- **`components/`** : Contient les composants réutilisables de l'interface utilisateur (ex. menu).
+- **`pages/`** : Organise les différentes pages du dashboard.
 
 ---
 
